@@ -10,11 +10,10 @@ import Container from "@mui/material/Container";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
-import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
-import CardMedia from "@mui/material/CardMedia";
+import { CardMedia, Grid, MenuItem } from "@mui/material";
 // import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 
@@ -207,6 +206,84 @@ const Portfolio = () => {
         </CardActionArea>
       </Card>
       {/* Third Content */}
+
+      <Grid
+        container
+        spacing={2}
+        sx={{
+          marginTop: "0px",
+          width: "74%",
+          height: "49vh",
+          marginLeft: "9%",
+        }}
+      >
+        <Grid
+          xs={8}
+          sx={{
+            backgroundColor: "pink",
+          }}
+        >
+          <Box sx={{ paddingTop: "8%" }}>
+            <Typography
+              variant="h6"
+              sx={{ fontWeight: "700", color: "#b5b0b0" }}
+            >
+              INTRODUCTION
+            </Typography>
+            <Typography
+              variant="h4"
+              sx={{ paddingTop: "8px", fontWeight: "900", fontSize: "4rem" }}
+            >
+              Overview.
+            </Typography>
+            <Typography
+              variant="body"
+              sx={{ color: "#b5b0b0", fontSize: "19px" }}
+            >
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+              sapiente ipsum dolorum dicta eaque cumque inventore molestias,
+              beatae ea quaerat alias accusamus voluptas autem! Alias odit
+              voluptates in totam vitae dignissimos minus eaque culpa unde
+              tempore dolore aperiam obcaecati voluptatum aliquam corrupti,
+              suscipit accusamus! Odit unde veniam dolorum ipsum doloribus.
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid xs={4}>
+          <Box />
+        </Grid>
+      </Grid>
+
+      {/* <Box>
+        <Typography
+          style={{
+            height: "35vh",
+            backgroundColor: "pink",
+            margin: "none",
+            margin: "0",
+          }}
+        >
+          <div
+            style={{
+              margin: "0",
+              width: "50%",
+              height: "35vh",
+              backgroundColor: "green",
+            }}
+          >
+            <h4 style={{ margin: "0" }}>INTRODUCTION</h4>
+            <h1>Overview.</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
+              sapiente ipsum dolorum dicta eaque cumque inventore molestias,
+              beatae ea quaerat alias accusamus voluptas autem! Alias odit
+              voluptates in totam vitae dignissimos minus eaque culpa unde
+              tempore dolore aperiam obcaecati voluptatum aliquam corrupti,
+              suscipit accusamus! Odit unde veniam dolorum ipsum doloribus.
+            </p>
+          </div>
+        </Typography>
+      </Box> */}
     </>
   );
 };
