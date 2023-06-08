@@ -253,37 +253,6 @@ const Portfolio = () => {
           <Box />
         </Grid>
       </Grid>
-
-      {/* <Box>
-        <Typography
-          style={{
-            height: "35vh",
-            backgroundColor: "pink",
-            margin: "none",
-            margin: "0",
-          }}
-        >
-          <div
-            style={{
-              margin: "0",
-              width: "50%",
-              height: "35vh",
-              backgroundColor: "green",
-            }}
-          >
-            <h4 style={{ margin: "0" }}>INTRODUCTION</h4>
-            <h1>Overview.</h1>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-              sapiente ipsum dolorum dicta eaque cumque inventore molestias,
-              beatae ea quaerat alias accusamus voluptas autem! Alias odit
-              voluptates in totam vitae dignissimos minus eaque culpa unde
-              tempore dolore aperiam obcaecati voluptatum aliquam corrupti,
-              suscipit accusamus! Odit unde veniam dolorum ipsum doloribus.
-            </p>
-          </div>
-        </Typography>
-      </Box> */}
     </>
   );
 };
