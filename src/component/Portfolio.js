@@ -2,6 +2,7 @@ import * as React from "react";
 // import { AdbIcon, MenuIcon } from "@mui/icons-material";
 import AdbIcon from "@mui/icons-material/Adb";
 import MenuIcon from "@mui/icons-material/Menu";
+import assets from "../assets/backgrounds/world-map.png";
 // import Container from "@mui/material/Container";
 import {
   CardMedia,
@@ -47,13 +48,21 @@ const Portfolio = () => {
 
   return (
     <>
-      <AppBar position="fixed">
+      <AppBar
+        position="fixed"
+        sx={{ backgroundColor: " #F4F4F6", color: "black" }}
+      >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <AdbIcon
               sx={{
-                display: { xs: "none", md: "flex" },
-                mr: 1,
+                display: {
+                  xs: "none",
+                  mr: 1,
+                  md: "flex",
+                  fontSize: "3rem",
+                  paddingLeft: "1rem",
+                },
               }}
             />
             <Typography
@@ -65,10 +74,12 @@ const Portfolio = () => {
                 mr: 2,
                 display: { xs: "none", md: "flex" },
                 fontFamily: "monospace",
-                fontWeight: 700,
+                fontWeight: "bolder",
                 letterSpacing: ".3rem",
-                color: "inherit",
                 textDecoration: "none",
+                fontSize: "4rem",
+                paddingLeft: "5rem",
+                color: "black",
               }}
             >
               LOGO
@@ -130,7 +141,7 @@ const Portfolio = () => {
                 fontFamily: "monospace",
                 fontWeight: 700,
                 letterSpacing: ".3rem",
-                color: "inherit",
+                color: "black",
                 textDecoration: "none",
               }}
             >
@@ -141,6 +152,7 @@ const Portfolio = () => {
                 flexGrow: 1,
                 display: { xs: "none", md: "flex" },
                 justifyContent: "end",
+                color: "black",
               }}
             >
               {pages.map((page) => (
@@ -153,6 +165,7 @@ const Portfolio = () => {
                     color: "white",
                     display: "block",
                     float: "right",
+                    color: "black",
                   }}
                 >
                   {page}
@@ -192,7 +205,9 @@ const Portfolio = () => {
         </Container>
       </AppBar>
       {/* second content */}
-      <Card sx={{ width: "100%", height: "100vh", backgroundColor: "blue" }}>
+      <Card
+        sx={{ width: "100%", height: "100vh", backgroundImage: "world-map" }}
+      >
         <CardActionArea>
           <CardMedia
             component="img"
@@ -218,17 +233,12 @@ const Portfolio = () => {
         spacing={2}
         sx={{
           marginTop: "0px",
-          width: "74%",
-          height: "49vh",
-          marginLeft: "9%",
+          width: "100%",
+          background: "#F4F4F6",
+          paddingLeft: "11rem",
         }}
       >
-        <Grid
-          xs={8}
-          sx={{
-            backgroundColor: "pink",
-          }}
-        >
+        <Grid xs={8} sx={{}}>
           <Box sx={{ paddingTop: "8%" }}>
             <Typography
               variant="h6"
