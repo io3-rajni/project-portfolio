@@ -206,24 +206,41 @@ const Portfolio = () => {
       </AppBar>
       {/* second content */}
       <Card
-        sx={{ width: "100%", height: "100vh", backgroundImage: "world-map" }}
+        sx={{
+          width: "100%",
+          height: "100vh",
+          backgroundImage: "world-map",
+          display: "flex",
+        }}
       >
-        <CardActionArea>
-          <CardMedia
-            component="img"
-            height="140"
-            image="/static/images/cards/contemplative-reptile.jpg"
-            alt="green iguana"
-          />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              Lizard
-            </Typography>
-            <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over
-              6,000 species, ranging across all continents except Antarctica
-            </Typography>
-          </CardContent>
+        <CardActionArea
+          sx={{
+            width: "100%",
+            height: "100vh",
+            backgroundImage: "world-map",
+            display: "flex",
+          }}
+        >
+          <Box sx={{ backgroundColor: "blue", width: "50%" }}>
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Lizard
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Lizards are a widespread group of squamate reptiles, with over
+                6,000 species, ranging across all continents except Antarctica
+              </Typography>
+            </CardContent>
+          </Box>
+          <Box>
+            <CardMedia
+              sx={{ backgroundColor: "red", width: "50%" }}
+              component="img"
+              height="140"
+              image="/static/images/cards/contemplative-reptile.jpg"
+              alt="green iguana"
+            />
+          </Box>
         </CardActionArea>
       </Card>
       {/* Third Content */}

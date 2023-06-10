@@ -14,8 +14,8 @@ export default function CardData() {
       <Box
         sx={{
           display: "flex",
-          width: "80%",
-          marginLeft: "4.9rem",
+          width: "100%",
+          // marginLeft: "4.9rem",
           justifyContent: "space-evenly",
           paddingTop: "4rem",
           backgroundColor: "#F4F4F6",
