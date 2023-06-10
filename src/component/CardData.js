@@ -18,6 +18,7 @@ export default function CardData() {
           // marginLeft: "4.9rem",
           justifyContent: "space-evenly",
           paddingTop: "4rem",
+          paddingBottom: "4rem",
           backgroundColor: "#F4F4F6",
         }}
       >

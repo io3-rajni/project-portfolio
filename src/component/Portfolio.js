@@ -1,9 +1,8 @@
 import * as React from "react";
-// import { AdbIcon, MenuIcon } from "@mui/icons-material";
+import "./Portfolio.css";
 import AdbIcon from "@mui/icons-material/Adb";
 import MenuIcon from "@mui/icons-material/Menu";
-import assets from "../assets/backgrounds/world-map.png";
-// import Container from "@mui/material/Container";
+import worldMap from "../assets/backgrounds/world-map.png";
 import {
   CardMedia,
   Grid,
@@ -205,86 +204,48 @@ const Portfolio = () => {
         </Container>
       </AppBar>
       {/* second content */}
-      <Card
-        sx={{
-          width: "100%",
-          height: "100vh",
-          backgroundImage: "world-map",
-          display: "flex",
-        }}
-      >
-        <CardActionArea
+      <Grid container>
+        <Box className="backImage" />
+        {/* <img src={worldMap} alt="green iguana" height="100%" width="100%" /> */}
+        {/* </Box> */}
+        <Box sx={{ backgroundColor: "blue", width: "50%" }}>
+          {/* <CardContent> */}
+          <Typography gutterBottom variant="h5" component="div">
+            Lizard
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            Lizards are a widespread group of squamate reptiles, with over 6,000
+            species, ranging across all continents except Antarctica
+          </Typography>
+          {/* </CardContent> */}
+          <Grid item xs={6}>
+            {/* <Card
           sx={{
             width: "100%",
             height: "100vh",
             backgroundImage: "world-map",
             display: "flex",
           }}
-        >
-          <Box sx={{ backgroundColor: "blue", width: "50%" }}>
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Lizard
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Lizards are a widespread group of squamate reptiles, with over
-                6,000 species, ranging across all continents except Antarctica
-              </Typography>
-            </CardContent>
-          </Box>
-          <Box>
-            <CardMedia
-              sx={{ backgroundColor: "red", width: "50%" }}
-              component="img"
-              height="140"
-              image="/static/images/cards/contemplative-reptile.jpg"
-              alt="green iguana"
-            />
-          </Box>
-        </CardActionArea>
-      </Card>
-      {/* Third Content */}
+        > */}
+            {/* <CardActionArea
+            sx={{
+              width: "100%",
+              height: "100vh",
+              backgroundImage: "world-map",
+              display: "flex",
+            }}
+          > */}
 
-      <Grid
-        container
-        spacing={2}
-        sx={{
-          marginTop: "0px",
-          width: "100%",
-          background: "#F4F4F6",
-          paddingLeft: "11rem",
-        }}
-      >
-        <Grid xs={8} sx={{}}>
-          <Box sx={{ paddingTop: "8%" }}>
-            <Typography
-              variant="h6"
-              sx={{ fontWeight: "700", color: "#b5b0b0" }}
-            >
-              INTRODUCTION
-            </Typography>
-            <Typography
-              variant="h4"
-              sx={{ paddingTop: "8px", fontWeight: "900", fontSize: "4rem" }}
-            >
-              Overview.
-            </Typography>
-            <Typography
-              variant="body"
-              sx={{ color: "#b5b0b0", fontSize: "19px" }}
-            >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-              sapiente ipsum dolorum dicta eaque cumque inventore molestias,
-              beatae ea quaerat alias accusamus voluptas autem! Alias odit
-              voluptates in totam vitae dignissimos minus eaque culpa unde
-              tempore dolore aperiam obcaecati voluptatum aliquam corrupti,
-              suscipit accusamus! Odit unde veniam dolorum ipsum doloribus.
-            </Typography>
-          </Box>
-        </Grid>
-        <Grid xs={4}>
-          <Box />
-        </Grid>
+            {/* <Box> */}
+            {/* <CardMedia /> */}
+            {/* </Box> */}
+            {/* </CardActionArea> */}
+            {/* </Card> */}
+          </Grid>
+        </Box>
+        {/* Third Content */}
+
+        <Grid item xs={6}></Grid>
       </Grid>
     </>
   );
