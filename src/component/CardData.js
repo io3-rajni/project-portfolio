@@ -5,7 +5,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, Box } from "@mui/material";
 
-import { CardConfig } from "./CardConfig";
+import { CardConfig } from "./Config";
 
 export default function CardData() {
   console.log("data config", CardConfig);

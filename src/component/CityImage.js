@@ -4,11 +4,18 @@ import { styled } from "@mui/material/styles";
 import { Grid, Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import Item from "@mui/material/Box";
+import { tech } from "./Config";
 
 const CityImage = () => {
+  console.log("hgrhfgrfefgvfhdfw", tech);
   return (
     <>
-      <Grid container className="largeImg" sx={{ padding: " 12% 0px 0px 10%" }}>
+      <Grid
+        item
+        container
+        className="largeImg"
+        sx={{ padding: " 12% 0px 0px 10%" }}
+      >
         <Grid item xs={12}>
           <Box>
             <Typography
@@ -32,7 +39,17 @@ const CityImage = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid item xs={12}></Grid>
+        <Grid item xs={12}>
+          {tech?.map((item, i) => {
+            console.log("item", item);
+            return (
+              <Box>
+                <img src={item?.img} />
+                {/* <ballCanvas icons={item.icon} /> */}
+              </Box>
+            );
+          })}
+        </Grid>
         <Grid item xs={6}></Grid>
         <Grid item xs={6}></Grid>
       </Grid>
