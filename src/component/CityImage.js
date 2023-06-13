@@ -5,18 +5,14 @@ import { Grid, Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import Item from "@mui/material/Box";
 import { tech } from "./Config";
+import BallCanvas from "./canvas/Ball";
 
 const CityImage = () => {
   console.log("hgrhfgrfefgvfhdfw", tech);
   return (
     <>
-      <Grid
-        item
-        container
-        className="largeImg"
-        sx={{ padding: " 12% 0px 0px 10%" }}
-      >
-        <Grid item xs={12}>
+      <Grid item container className="largeImg">
+        <Grid item xs={12} sx={{ padding: " 8% 0px 0px 8%" }}>
           <Box>
             <Typography
               variant="h6"
@@ -39,19 +35,25 @@ const CityImage = () => {
             </Typography>
           </Box>
         </Grid>
-        <Grid item xs={12}>
+        <Grid
+          item
+          xs={12}
+          sx={{
+            display: "flex",
+            width: "10rem",
+            justifyContent: "space-evenly",
+          }}
+        >
           {tech?.map((item, i) => {
             console.log("item", item);
             return (
-              <Box>
-                <img src={item?.img} />
-                {/* <ballCanvas icons={item.icon} /> */}
+              <Box sx={{ width: "12rem", height: "12rem" }}>
+                {/* <img src={item?.img} /> */}
+                <BallCanvas icon={item.img} />
               </Box>
             );
           })}
         </Grid>
-        <Grid item xs={6}></Grid>
-        <Grid item xs={6}></Grid>
       </Grid>
     </>
   );
