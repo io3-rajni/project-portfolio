@@ -2,8 +2,9 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { TextVariant } from "./TextVariant";
 import { Grid, Box, Typography, container } from "@mui/material";
-import { Project } from "./CompanyCard";
+import { CompanyCard } from "./Config";
 export default function Project() {
+  console.log("bfhgfyvg", CompanyCard);
   return (
     <>
       <Grid
@@ -54,17 +55,14 @@ export default function Project() {
             </Box>
           </Box>
         </Grid>
-        {Project?.map((item, i) => {
-          console.log("bfhgfyvg", item);
-        })}
-        {/* {tech?.map((item, i) => {
+        {CompanyCard?.map((item, i) => {
           console.log("item", item);
           return (
-            <Box sx={{ width: "12rem", height: "12rem" }}>
-              <BallCanvas icon={item.img} />
+            <Box>
+              <Typography>{item?.img}</Typography>
             </Box>
           );
-        })} */}
+        })}
       </Grid>
     </>
   );

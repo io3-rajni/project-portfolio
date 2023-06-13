@@ -5,10 +5,10 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea, Box } from "@mui/material";
 
-import { CardConfig } from "./Config";
+import { Config } from "./Config";
 
 export default function CardData() {
-  console.log("data config", CardConfig);
+  console.log("data config", Config);
   return (
     <>
       <Box
@@ -22,7 +22,7 @@ export default function CardData() {
           backgroundColor: "#F4F4F6",
         }}
       >
-        {CardConfig?.map((item, i) => {
+        {Config?.map((item, i) => {
           console.log("item ", item);
           return (
             <Card

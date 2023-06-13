@@ -7,8 +7,8 @@ import Css from "../assets/tech/css.png";
 import Git from "../assets/tech/git.png";
 import javascript from "../assets/tech/javascript.png";
 import react from "../assets/tech/reactjs.png";
-import card1 from "../assets/company/coverhunt.png";
-export const CardConfig = [
+import figma from "../assets/tech/figma.png";
+export const Config = [
   {
     id: 1,
     img: frontend,
@@ -43,9 +43,13 @@ export const tech = [
     img: react,
   },
 ];
-export const Project = [
+export const CompanyCard = [
+  // {
+  //   id: 10000,
+  //   img: figma,
+  // },
   {
-    id: 1,
-    img: card1,
+    id: 20000,
+    img: figma,
   },
 ];
