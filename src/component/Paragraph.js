@@ -1,5 +1,6 @@
 import * as React from "react";
-
+import { motion } from "framer-motion";
+import { TextVariant } from "./TextVariant";
 import { Grid, Box, Typography, container } from "@mui/material";
 export default function Paragraph() {
   return (
@@ -14,21 +15,24 @@ export default function Paragraph() {
           paddingLeft: "11rem",
         }}
       >
-        <Grid xs={8} sx={{}}>
+        <Grid xs={8}>
           <Box sx={{ paddingTop: "8%" }}>
-            <Typography
-              variant="h6"
-              sx={{ fontWeight: "700", color: "#b5b0b0" }}
-            >
-              INTRODUCTION
-            </Typography>
+            <motion.div variants={TextVariant()}>
+              <Typography
+                variant="h6"
+                sx={{ fontWeight: "700", color: "#b5b0b0" }}
+              >
+                INTRODUCTION
+              </Typography>
 
-            <Typography
-              variant="h4"
-              sx={{ paddingTop: "8px", fontWeight: "900", fontSize: "4rem" }}
-            >
-              Overview.
-            </Typography>
+              <Typography
+                variant="h4"
+                sx={{ paddingTop: "8px", fontWeight: "900", fontSize: "4rem" }}
+              >
+                Overview.
+              </Typography>
+            </motion.div>
+
             <Box sx={{ paddingTop: "4%" }}>
               <Typography
                 variant="body"
