@@ -7,8 +7,8 @@ import Css from "../assets/tech/css.png";
 import Git from "../assets/tech/git.png";
 import javascript from "../assets/tech/javascript.png";
 import react from "../assets/tech/reactjs.png";
+import card1 from "../assets/company/coverhunt.png";
 export const CardConfig = [
-  // { id: 1, img: backend, title: "Backend Developer" },
   {
     id: 1,
     img: frontend,
@@ -41,5 +41,11 @@ export const tech = [
   {
     id: 500,
     img: react,
+  },
+];
+export const Project = [
+  {
+    id: 1,
+    img: card1,
   },
 ];
