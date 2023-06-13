@@ -65,7 +65,9 @@ export default function SelfIntro() {
             </Box>
           </Grid>
           <Grid item xs={6}>
-            <Item></Item>
+            <Box>
+              <Item>2</Item>
+            </Box>
           </Grid>
         </Grid>
       </Box>
