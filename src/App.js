@@ -1,16 +1,18 @@
-import Portfolio from "./component/Portfolio";
+// import Navbar from "./component/Navbar";
 import Paragraph from "./component/Paragraph";
 import CardData from "./component/CardData";
-import CityImage from "./component/CityImage";
+import Tech from "./component/Tech";
+import SelfIntro from "./component/SelfIntro";
 import "./App.css";
 
 function App() {
   return (
     <div>
-      <Portfolio />
+      {/* <Navbar /> */}
+      <SelfIntro />
       <Paragraph />
       <CardData />
-      <CityImage />
+      <Tech />
     </div>
   );
 }

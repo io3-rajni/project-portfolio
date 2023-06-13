@@ -1,7 +1,5 @@
 import * as React from "react";
-// import AdbIcon from "@mui/icons-material/Adb";
-// import MenuIcon from "@mui/icons-material/Menu";
-// import assets from "../assets/backgrounds/world-map.png";
+
 import { Grid, Box, Typography, container } from "@mui/material";
 export default function Paragraph() {
   return (

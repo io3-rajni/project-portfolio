@@ -1,9 +1,8 @@
 import "./style.css";
 import * as React from "react";
-import { styled } from "@mui/material/styles";
+
 import { Grid, Typography } from "@mui/material";
 import Box from "@mui/material/Box";
-import Item from "@mui/material/Box";
 import { tech } from "./Config";
 import BallCanvas from "./canvas/Ball";
 
