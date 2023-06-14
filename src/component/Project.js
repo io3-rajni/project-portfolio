@@ -2,9 +2,9 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { TextVariant } from "./TextVariant";
 import { Grid, Box, Typography, container } from "@mui/material";
-import { CompanyCard } from "./Config";
+// import { CompanyCard } from "./Config";
 export default function Project() {
-  console.log("bfhgfyvg", CompanyCard);
+  // console.log("bfhgfyvg", CompanyCard);
   return (
     <>
       <Grid
@@ -18,9 +18,9 @@ export default function Project() {
           paddingLeft: "11rem",
         }}
       >
-        <Grid xs={8}>
-          <Box sx={{ paddingTop: "8%" }}>
-            <motion.p variants={TextVariant()}>
+        <Grid xs={12}>
+          <Box sx={{ paddingTop: "8%", width: "60%" }}>
+            <motion.div variants={TextVariant()}>
               <Typography
                 variant="h6"
                 sx={{ fontWeight: "700", color: "#fff" }}
@@ -39,12 +39,12 @@ export default function Project() {
               >
                 Projects.
               </Typography>
-            </motion.p>
+            </motion.div>
 
             <Box sx={{ paddingTop: "4%" }}>
               <Typography
                 variant="body"
-                sx={{ color: "#fff", fontSize: "19px" }}
+                sx={{ color: "#fff", fontSize: "19px", width: "40%" }}
               >
                 These projects demonstrate my expertise with practical examples
                 of some of my work, including brief descriptions and links to
@@ -55,16 +55,44 @@ export default function Project() {
             </Box>
           </Box>
         </Grid>
-        {CompanyCard?.map((item, i) => {
-          console.log("item", item);
-          return (
-            <Box>
-              <Typography>
-                <img src={item?.img} />
-              </Typography>
-            </Box>
-          );
-        })}
+        <Box sx={{ width: "100%" }}>
+          <Grid
+            container
+            rowSpacing={1}
+            // columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+          >
+            <Grid xs={6}>
+              <Box
+                sx={{
+                  width: "20rem",
+                  height: "20vh",
+                  // backgroundColor: "red",
+                }}
+              >
+                <Typography
+                  sx={{
+                    width: "10rem",
+                    height: "20vh",
+                    backgroundColor: "Blue",
+                  }}
+                ></Typography>
+                <Typography
+                  sx={{
+                    width: "10rem",
+                    height: "20vh",
+                    backgroundColor: "green",
+                  }}
+                ></Typography>
+              </Box>
+            </Grid>
+            {/* <Grid xs={6}>
+              <>3</>
+            </Grid>
+            <Grid xs={6}>
+              <>4</>
+            </Grid> */}
+          </Grid>
+        </Box>
       </Grid>
     </>
   );

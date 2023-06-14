@@ -1,4 +1,4 @@
-// import Navbar from "./component/Navbar";
+import Navbar from "./component/Navbar";
 import Paragraph from "./component/Paragraph";
 import CardData from "./component/CardData";
 import Tech from "./component/Tech";
@@ -9,7 +9,7 @@ import "./App.css";
 function App() {
   return (
     <div>
-      {/* <Navbar /> */}
+      <Navbar />
       <SelfIntro />
       <Paragraph />
       <CardData />

@@ -48,7 +48,7 @@ const CityImage = () => {
             return (
               <Box sx={{ width: "12rem", height: "12rem" }}>
                 {/* <img src={item?.img} /> */}
-                <img src={item.img} />
+                <BallCanvas icon={item.img} />
               </Box>
             );
           })}

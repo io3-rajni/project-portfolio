@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./Portfolio.css";
+// import "./Portfolio.css";
 import AdbIcon from "@mui/icons-material/Adb";
 import MenuIcon from "@mui/icons-material/Menu";
 import worldMap from "../assets/backgrounds/world-map.png";
