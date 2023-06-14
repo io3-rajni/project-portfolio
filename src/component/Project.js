@@ -20,7 +20,7 @@ export default function Project() {
       >
         <Grid xs={8}>
           <Box sx={{ paddingTop: "8%" }}>
-            <motion.div variants={TextVariant()}>
+            <motion.p variants={TextVariant()}>
               <Typography
                 variant="h6"
                 sx={{ fontWeight: "700", color: "#fff" }}
@@ -39,7 +39,7 @@ export default function Project() {
               >
                 Projects.
               </Typography>
-            </motion.div>
+            </motion.p>
 
             <Box sx={{ paddingTop: "4%" }}>
               <Typography
@@ -59,7 +59,9 @@ export default function Project() {
           console.log("item", item);
           return (
             <Box>
-              <Typography>{item?.img}</Typography>
+              <Typography>
+                <img src={item?.img} />
+              </Typography>
             </Box>
           );
         })}

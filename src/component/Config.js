@@ -7,7 +7,9 @@ import Css from "../assets/tech/css.png";
 import Git from "../assets/tech/git.png";
 import javascript from "../assets/tech/javascript.png";
 import react from "../assets/tech/reactjs.png";
-import figma from "../assets/tech/figma.png";
+import komikult from "../assets/projects/komikult.png";
+import leaderboard from "../assets/projects/leaderboard.png";
+import math from "../assets/projects/math-magicians.png";
 export const Config = [
   {
     id: 1,
@@ -44,12 +46,16 @@ export const tech = [
   },
 ];
 export const CompanyCard = [
-  // {
-  //   id: 10000,
-  //   img: figma,
-  // },
+  {
+    id: 10000,
+    img: leaderboard,
+  },
   {
     id: 20000,
-    img: figma,
+    img: komikult,
+  },
+  {
+    id: 30000,
+    img: math,
   },
 ];
