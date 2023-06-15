@@ -10,6 +10,7 @@ export default function Project() {
       <Grid
         container
         spacing={2}
+        columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         sx={{
           margin: "0px",
           width: "100%",
@@ -59,38 +60,96 @@ export default function Project() {
           <Grid
             container
             rowSpacing={1}
-            // columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+            columnSpacing={{ xs: 1, sm: 2, md: 3 }}
           >
-            <Grid xs={6}>
+            <Grid xs={12} md={3} lg={4}>
               <Box
                 sx={{
-                  width: "20rem",
-                  height: "20vh",
-                  // backgroundColor: "red",
+                  display: "flex",
                 }}
               >
                 <Typography
                   sx={{
-                    width: "10rem",
-                    height: "20vh",
+                    width: "15rem",
+                    height: "25vh",
                     backgroundColor: "Blue",
                   }}
                 ></Typography>
                 <Typography
                   sx={{
-                    width: "10rem",
-                    height: "20vh",
+                    width: "15rem",
+                    height: "25vh",
                     backgroundColor: "green",
                   }}
                 ></Typography>
               </Box>
             </Grid>
-            {/* <Grid xs={6}>
-              <>3</>
+            <Grid xs={12} md={3} lg={4}>
+              <Box
+                sx={{
+                  display: "flex",
+                }}
+              >
+                <Typography
+                  sx={{
+                    width: "15rem",
+                    height: "25vh",
+                    backgroundColor: "red",
+                  }}
+                ></Typography>
+                <Typography
+                  sx={{
+                    width: "15rem",
+                    height: "25vh",
+                    backgroundColor: "orange",
+                  }}
+                ></Typography>
+              </Box>
             </Grid>
-            <Grid xs={6}>
-              <>4</>
-            </Grid> */}
+            <Grid xs={12} md={3} lg={4}>
+              <Box
+                sx={{
+                  display: "flex",
+                }}
+              >
+                <Typography
+                  sx={{
+                    width: "15rem",
+                    height: "30vh",
+                    backgroundColor: "red",
+                  }}
+                ></Typography>
+                <Typography
+                  sx={{
+                    width: "15rem",
+                    height: "30vh",
+                    backgroundColor: "orange",
+                  }}
+                ></Typography>
+              </Box>
+            </Grid>
+            <Grid xs={12} md={3} lg={4}>
+              <Box
+                sx={{
+                  display: "flex",
+                }}
+              >
+                <Typography
+                  sx={{
+                    width: "15rem",
+                    height: "25vh",
+                    backgroundColor: "red",
+                  }}
+                ></Typography>
+                <Typography
+                  sx={{
+                    width: "15rem",
+                    height: "25vh",
+                    backgroundColor: "orange",
+                  }}
+                ></Typography>
+              </Box>
+            </Grid>
           </Grid>
         </Box>
       </Grid>

@@ -37,19 +37,26 @@ const CityImage = () => {
         <Grid
           item
           xs={12}
+          sm={12}
+          md={12}
           sx={{
             display: "flex",
-            width: "10rem",
+
             justifyContent: "space-evenly",
           }}
+          direction={"row"}
         >
           {tech?.map((item, i) => {
             console.log("item", item);
             return (
-              <Box sx={{ width: "12rem", height: "12rem" }}>
-                {/* <img src={item?.img} /> */}
+              <Grid
+                xs={12}
+                sm={12}
+                md={2}
+                sx={{ width: "12rem", height: "12rem" }}
+              >
                 <BallCanvas icon={item.img} />
-              </Box>
+              </Grid>
             );
           })}
         </Grid>
