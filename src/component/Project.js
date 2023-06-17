@@ -1,5 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
+import { MotionAnimate } from "react-motion-animate";
 import { TextVariant } from "./TextVariant";
 import { Grid, Box, Typography, container } from "@mui/material";
 import { MiniProject, GitIcon } from "./Config";
@@ -11,6 +12,10 @@ export default function Project() {
   console.log("bfhgfyvg", MiniProject);
   return (
     <>
+      <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
+        <div>Fade in slow...</div>
+      </MotionAnimate>
+
       <Grid
         container
         spacing={2}
