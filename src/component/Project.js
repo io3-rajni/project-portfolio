@@ -1,6 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import { MotionAnimate } from "react-motion-animate";
+// import { MotionAnimate } from "react-motion-animate";
 import { TextVariant } from "./TextVariant";
 import { Grid, Box, Typography, container } from "@mui/material";
 import { MiniProject, GitIcon } from "./Config";
@@ -8,22 +8,17 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Card from "@mui/material/Card";
 import { CardActionArea } from "@mui/material";
+
 export default function Project() {
   console.log("bfhgfyvg", MiniProject);
   return (
     <>
-      <MotionAnimate animation="scrollFadeIn" scrollPositions={[0.1, 0.9]}>
-        <div>Fade in slow...</div>
-      </MotionAnimate>
-
       <Grid
         container
         spacing={2}
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         sx={{
           margin: "0px",
-          // width: "100%",
-          // height: "100vh",
           background: "#000",
           paddingLeft: "11rem",
         }}
@@ -72,7 +67,7 @@ export default function Project() {
             height: "50vh",
             flexWrap: "wrap",
             paddingRight: "5%",
-            height: "124vh",
+            height: "129vh",
             justifyContent: "space-evenly",
           }}
         >

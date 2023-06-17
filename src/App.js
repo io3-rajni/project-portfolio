@@ -4,6 +4,7 @@ import CardData from "./component/CardData";
 import Tech from "./component/Tech";
 import SelfIntro from "./component/SelfIntro";
 import Project from "./component/Project";
+import Experience from "./component/Experience";
 import "./App.css";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <CardData />
       <Tech />
       <Project />
+      <Experience />
     </div>
   );
 }
