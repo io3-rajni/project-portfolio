@@ -1,0 +1,13 @@
+.bigImage {
+  width: 100%;
+  background-size: cover;
+  height: 100vh;
+  background-color: black;
+
+  background-image: linear-gradient(
+      165deg,
+      rgba(20, 20, 20, 0.8) 100%,
+      rgba(109, 109, 116, 0.8) 100%
+    ),
+    url(../assets/backgrounds/3rd\ image.jpg);
+}
