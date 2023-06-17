@@ -2,9 +2,13 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { TextVariant } from "./TextVariant";
 import { Grid, Box, Typography, container } from "@mui/material";
-// import { CompanyCard } from "./Config";
+import { MiniProject, GitIcon } from "./Config";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Card from "@mui/material/Card";
+import { CardActionArea } from "@mui/material";
 export default function Project() {
-  // console.log("bfhgfyvg", CompanyCard);
+  console.log("bfhgfyvg", MiniProject);
   return (
     <>
       <Grid
@@ -13,14 +17,14 @@ export default function Project() {
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         sx={{
           margin: "0px",
-          width: "100%",
-          height: "100vh",
+          // width: "100%",
+          // height: "100vh",
           background: "#000",
           paddingLeft: "11rem",
         }}
       >
         <Grid xs={12}>
-          <Box sx={{ paddingTop: "8%", width: "60%" }}>
+          <Box sx={{ paddingTop: "4%", width: "60%" }}>
             <motion.div variants={TextVariant()}>
               <Typography
                 variant="h6"
@@ -56,101 +60,79 @@ export default function Project() {
             </Box>
           </Box>
         </Grid>
-        <Box sx={{ width: "100%" }}>
-          <Grid
-            container
-            rowSpacing={1}
-            columnSpacing={{ xs: 1, sm: 2, md: 3 }}
-          >
-            <Grid xs={12} md={3} lg={4}>
-              <Box
-                sx={{
-                  display: "flex",
-                }}
-              >
-                <Typography
+        <Box
+          sx={{
+            display: "flex",
+            width: "100%",
+            height: "50vh",
+            flexWrap: "wrap",
+            paddingRight: "5%",
+            height: "124vh",
+            justifyContent: "space-evenly",
+          }}
+        >
+          {MiniProject?.map((item, i) => {
+            console.log("item ", item);
+            return (
+              <>
+                <Card
                   sx={{
-                    width: "15rem",
-                    height: "25vh",
-                    backgroundColor: "Blue",
+                    maxWidth: 345,
+                    width: "17rem",
+                    background: "white",
+                    boxShadow: " 1px 5px 88px 9px",
+                    borderRadius: "25px",
+                    marginTop: "5%",
                   }}
-                ></Typography>
-                <Typography
-                  sx={{
-                    width: "15rem",
-                    height: "25vh",
-                    backgroundColor: "green",
-                  }}
-                ></Typography>
-              </Box>
-            </Grid>
-            <Grid xs={12} md={3} lg={4}>
-              <Box
-                sx={{
-                  display: "flex",
-                }}
-              >
-                <Typography
-                  sx={{
-                    width: "15rem",
-                    height: "25vh",
-                    backgroundColor: "red",
-                  }}
-                ></Typography>
-                <Typography
-                  sx={{
-                    width: "15rem",
-                    height: "25vh",
-                    backgroundColor: "orange",
-                  }}
-                ></Typography>
-              </Box>
-            </Grid>
-            <Grid xs={12} md={3} lg={4}>
-              <Box
-                sx={{
-                  display: "flex",
-                }}
-              >
-                <Typography
-                  sx={{
-                    width: "15rem",
-                    height: "30vh",
-                    backgroundColor: "red",
-                  }}
-                ></Typography>
-                <Typography
-                  sx={{
-                    width: "15rem",
-                    height: "30vh",
-                    backgroundColor: "orange",
-                  }}
-                ></Typography>
-              </Box>
-            </Grid>
-            <Grid xs={12} md={3} lg={4}>
-              <Box
-                sx={{
-                  display: "flex",
-                }}
-              >
-                <Typography
-                  sx={{
-                    width: "15rem",
-                    height: "25vh",
-                    backgroundColor: "red",
-                  }}
-                ></Typography>
-                <Typography
-                  sx={{
-                    width: "15rem",
-                    height: "25vh",
-                    backgroundColor: "orange",
-                  }}
-                ></Typography>
-              </Box>
-            </Grid>
-          </Grid>
+                >
+                  <CardActionArea>
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image={item?.img}
+                      alt="image"
+                      sx={{
+                        backgroundColor: "blue",
+                        width: "17rem",
+                        height: "15rem",
+                      }}
+                    />
+                    <CardContent
+                      sx={{
+                        display: "flex",
+                        justifyContent: "space-evenly",
+                      }}
+                    >
+                      <Typography gutterBottom variant="h6" component="div">
+                        {item?.description}
+                      </Typography>
+                      {GitIcon?.map((item, i) => {
+                        return (
+                          <>
+                            <Box
+                              sx={{
+                                height: "3rem",
+                                background: "black",
+                                borderRadius: "25px",
+                              }}
+                            >
+                              <a href="https://github.com/io3-rajni">
+                                <img
+                                  src={item.img}
+                                  backgroundColor="black"
+                                  height="50rem"
+                                />
+                              </a>
+                            </Box>
+                          </>
+                        );
+                      })}
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </>
+            );
+          })}
         </Box>
       </Grid>
     </>

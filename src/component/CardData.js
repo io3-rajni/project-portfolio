@@ -8,7 +8,6 @@ import { CardActionArea, Box } from "@mui/material";
 import { Config } from "./Config";
 
 export default function CardData() {
-  console.log("data config", Config);
   return (
     <>
       <Box
