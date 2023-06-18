@@ -8,7 +8,10 @@ import Git from "../assets/tech/git.png";
 import javascript from "../assets/tech/javascript.png";
 import react from "../assets/tech/reactjs.png";
 import icon from "../assets/icons/github.png";
-
+import coverhunt from "../assets/icons/frontend.png";
+import microverse from "../assets/icons/github.png";
+import kelhel from "../assets/icons/prototyping.png";
+import dcc from "../assets/icons/menu.png";
 export const Config = [
   {
     id: 1,
@@ -98,5 +101,35 @@ export const GitIcon = [
   {
     id: "First",
     img: icon,
+  },
+];
+export const experienceData = [
+  {
+    title: "Front-End Developer",
+    company_name: "Cover Hunt",
+    icon: coverhunt,
+    iconBg: "#333333",
+    date: "Aug 2021 - Feb 2022",
+  },
+  {
+    title: "Mentor (Volunteer)",
+    company_name: "Microverse",
+    icon: microverse,
+    iconBg: "#333333",
+    date: "Mar 2022 - May 2022",
+  },
+  {
+    title: "Junior Software Engineer",
+    company_name: "Kelhel",
+    icon: kelhel,
+    iconBg: "#333333",
+    date: "May 2022 - Oct 2022",
+  },
+  {
+    title: "Full Stack Developer",
+    company_name: "Diversity Cyber Council",
+    icon: dcc,
+    iconBg: "#333333",
+    date: "Sep 2022 - Present",
   },
 ];
