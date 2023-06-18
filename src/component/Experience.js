@@ -11,13 +11,14 @@ import ExperienceCard from "./ExperienceCard";
 const Experience = () => {
   return (
     <>
-      <Typography component="img" className="bigImage"></Typography>
-      <VerticalTimeline className="vertical-timeline-custom-line">
+      {/* <Typography component="img" className="bigImage"> */}
+      <VerticalTimeline className="bigImage" sx={{ width: "100%" }}>
         {experienceData?.map((item, i) => {
           console.log("Experience", item);
           return <ExperienceCard key={i} item={item} />;
         })}
       </VerticalTimeline>
+      {/* </Typography> */}
     </>
   );
 };

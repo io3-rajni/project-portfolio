@@ -18,6 +18,7 @@ export default function Project() {
         spacing={2}
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         sx={{
+          height: "178vh",
           margin: "0px",
           background: "#000",
           paddingLeft: "11rem",
