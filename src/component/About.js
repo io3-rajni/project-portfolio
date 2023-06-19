@@ -13,12 +13,12 @@ import * as React from "react";
 const About = () => {
   const emailRegex = "[a-zA-Z0-9]+.[a-zA-Z0-9]+@gmail.com";
   const [email, setEmail] = useState("");
-  // const [enterEmail, setEnterEmail] = useState("");
+  const [showError, setShowError] = useState("");
   const handleEmail = (event) => {
     if (event?.target?.value.match(emailRegex)) {
       setEmail(event?.target?.value);
     } else {
-      setEmail("");
+      (event.target.value != emailRegex)("enter valid email");
     }
   };
   return (
