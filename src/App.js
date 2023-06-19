@@ -5,6 +5,7 @@ import Tech from "./component/Tech";
 import SelfIntro from "./component/SelfIntro";
 import Project from "./component/Project";
 import Experience from "./component/Experience";
+import Form from "./component/Form";
 import "./App.css";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Tech />
       <Project />
       <Experience />
+      <Form />
     </div>
   );
 }
