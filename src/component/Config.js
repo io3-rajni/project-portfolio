@@ -52,17 +52,21 @@ export const MiniProject = [
     id: 10000,
     img: "",
     alt: "blank img",
+    icon: icon,
     description: "A comic characters list app that displays Marvel characters.",
   },
   {
     id: 20000,
     img: "",
     alt: "blank img",
+    icon: icon,
     description: "A comic characters list app that displays Marvel characters.",
   },
   {
     id: 30000,
     img: "",
+    icon: icon,
+
     alt: "blank img",
     description: "A comic characters list app that displays Marvel characters.",
   },
@@ -70,11 +74,15 @@ export const MiniProject = [
     id: 10000,
     img: "",
     alt: "blank img",
+    icon: icon,
+
     description: "A comic characters list app that displays Marvel characters.",
   },
   {
     id: 20000,
     img: "",
+    icon: icon,
+
     alt: "blank img",
     description: "A comic characters list app that displays Marvel characters.",
   },
@@ -82,25 +90,24 @@ export const MiniProject = [
     id: 30000,
     img: "",
     alt: "blank img",
+    icon: icon,
+
     description: "A comic characters list app that displays Marvel characters.",
   },
   {
     id: 20000,
     img: "",
     alt: "blank img",
+    icon: icon,
+
     description: "A comic characters list app that displays Marvel characters.",
   },
   {
     id: 30000,
     img: "",
     alt: "blank img",
+    icon: icon,
     description: "A comic characters list app that displays Marvel characters.",
-  },
-];
-export const GitIcon = [
-  {
-    id: "First",
-    img: icon,
   },
 ];
 export const experienceData = [

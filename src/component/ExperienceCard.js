@@ -1,12 +1,11 @@
 import { VerticalTimelineElement } from "react-vertical-timeline-component";
 const ExperienceCard = ({ item }) => {
-  //   console.log("itkndfefhehjsrbghjem", item);
   return (
     <>
       <VerticalTimelineElement
         contentStyle={{
           background: "#eaeaec",
-          // color: "#292929",
+          color: "#292929",
           boxShadow:
             "rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px",
         }}
@@ -29,7 +28,7 @@ const ExperienceCard = ({ item }) => {
             <img
               className="w-[60%] h-[60%] object-contain"
               src={item.icon}
-              margin="9px 9px"
+              style={{ margin: "9px" }}
               height="42px"
               alt={item.company_name}
             />

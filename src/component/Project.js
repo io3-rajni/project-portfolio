@@ -1,7 +1,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 // import { MotionAnimate } from "react-motion-animate";
-import { TextVariant } from "./TextVariant";
+// import { TextVariant } from "./TextVariant";
 import { Grid, Box, Typography, container } from "@mui/material";
 import { MiniProject, GitIcon } from "./Config";
 import CardContent from "@mui/material/CardContent";
@@ -18,7 +18,7 @@ export default function Project() {
         spacing={2}
         columnSpacing={{ xs: 1, sm: 2, md: 3 }}
         sx={{
-          height: "178vh",
+          height: "159vh",
           margin: "0px",
           background: "#000",
           paddingLeft: "11rem",
@@ -26,26 +26,23 @@ export default function Project() {
       >
         <Grid xs={12}>
           <Box sx={{ paddingTop: "4%", width: "60%" }}>
-            <motion.div variants={TextVariant()}>
-              <Typography
-                variant="h6"
-                sx={{ fontWeight: "700", color: "#fff" }}
-              >
-                CASE STUDIES
-              </Typography>
+            {/* <motion.div variants={TextVariant()}> */}
+            <Typography variant="h6" sx={{ fontWeight: "700", color: "#fff" }}>
+              CASE STUDIES
+            </Typography>
 
-              <Typography
-                variant="h4"
-                sx={{
-                  paddingTop: "8px",
-                  fontWeight: "900",
-                  fontSize: "4rem",
-                  color: "#fff",
-                }}
-              >
-                Projects.
-              </Typography>
-            </motion.div>
+            <Typography
+              variant="h4"
+              sx={{
+                paddingTop: "8px",
+                fontWeight: "900",
+                fontSize: "4rem",
+                color: "#fff",
+              }}
+            >
+              Projects.
+            </Typography>
+            {/* </motion.div> */}
 
             <Box sx={{ paddingTop: "4%" }}>
               <Typography
@@ -102,32 +99,27 @@ export default function Project() {
                       sx={{
                         display: "flex",
                         justifyContent: "space-evenly",
+                        paddingTop: "10px",
                       }}
                     >
                       <Typography gutterBottom variant="h6" component="div">
                         {item?.description}
                       </Typography>
-                      {GitIcon?.map((item, i) => {
-                        return (
-                          <>
-                            <Box
-                              sx={{
-                                height: "3rem",
-                                background: "black",
-                                borderRadius: "25px",
-                              }}
-                            >
-                              <a href="https://github.com/io3-rajni">
-                                <img
-                                  src={item.img}
-                                  backgroundColor="black"
-                                  height="50rem"
-                                />
-                              </a>
-                            </Box>
-                          </>
-                        );
-                      })}
+                      <Box
+                        sx={{
+                          height: "3rem",
+                          background: "black",
+                          borderRadius: "25px",
+                        }}
+                      >
+                        <a href="https://github.com/io3-rajni">
+                          <img
+                            src={item.icon}
+                            backgroundColor="black"
+                            height="50rem"
+                          />
+                        </a>
+                      </Box>
                     </CardContent>
                   </CardActionArea>
                 </Card>
