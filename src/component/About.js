@@ -1,3 +1,4 @@
+// import { Label } from "@mui/icons-material";
 import {
   FormControl,
   TextField,
@@ -5,25 +6,26 @@ import {
   Typography,
   Box,
   Input,
-  FormLabel,
+  TextareaAutosize,
 } from "@mui/material";
 import { useState } from "react";
 import * as React from "react";
 // import Textarea from "@mui/Textarea";
 const About = () => {
-  const emailRegex = "[a-zA-Z0-9]+.[a-zA-Z0-9]+@gmail.com";
-  const [email, setEmail] = useState("");
-  const [showError, setShowError] = useState("");
-  const handleEmail = (event) => {
-    if (event?.target?.value.match(emailRegex)) {
-      setEmail(event?.target?.value);
-    } else {
-      (event.target.value != emailRegex)("enter valid email");
-    }
-  };
+  // const emailRegex = "[a-zA-Z0-9]+.[a-zA-Z0-9]+@gmail.com";
+  // const [email, setEmail] = useState();
+  // const [showError, setShowError] = useState("");
+  // const handleEmail = (event) => {
+  //   if (event?.target?.value.match(emailRegex)) {
+  //     setEmail(event?.target?.value);
+  //   } else {
+  //     setShowError("Enter Valid Email");
+  //   }
+  // };
+  // console.log("ShowError", showError);
   return (
     <>
-      <Grid item container>
+      <Grid item container spacing={1} sx={{ backgroundColor: "black" }}>
         <Grid item xs={12} sx={{ padding: " 8% 0px 0px 8%" }}>
           <Box>
             <Typography
@@ -46,37 +48,38 @@ const About = () => {
               Contact.
             </Typography>
           </Box>
-          {/* <FormControl>
-            <FormLabel>Email</FormLabel>
-            <Input
-              // html input attribute
-              name="email"
-              type="email"
-              placeholder="johndoe@email.com"
-            />
-          </FormControl> */}
-          {/* <FormControl>
-            <FormLabel>Password</FormLabel>
-            <Input name="password" type="password" placeholder="password" />
-          </FormControl> */}
         </Grid>
-        <FormControl sx={{ color: "white" }}>
-          <FormLabel>Your Name</FormLabel>
-          <TextField type="text" placeholder="What is your name">
-            What is your name
-          </TextField>
-          <FormLabel>Your Email</FormLabel>
-          <TextField
-            type="email"
-            placeholder="enter your email"
-            name="email"
-            value={email}
-            onChange={(event) => handleEmail(event)}
-          ></TextField>
-          <FormLabel>Message</FormLabel>
-          {/* <Textarea placeholder="Type anything…" minRows={2} />; */}
-          {/* <Textarea /> */}
-        </FormControl>
+        <Box component="form" sx={{}} noValidate autoComplete="off">
+          <div>
+            <Typography variant="h5">Your Name</Typography>
+
+            <TextField
+              id="outlined-password-input"
+              label="Your Name"
+              type="text"
+              autoComplete="name"
+            />
+          </div>
+          <div>
+            <Typography variant="h5">Your </Typography>
+
+            <TextField
+              id="outlined-password-input"
+              label="Email"
+              type="email"
+              autoComplete="on"
+            />
+          </div>
+          <div>
+            <Typography variant="h5">Message</Typography>
+
+            <TextareaAutosize
+              aria-label="minimum height"
+              minRows={3}
+              // placeholder="Minimum 3 rows"
+            ></TextareaAutosize>
+          </div>
+        </Box>
       </Grid>
     </>
   );
