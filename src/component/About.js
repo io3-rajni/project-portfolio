@@ -141,8 +141,18 @@ const About = () => {
                 />
               </Box>
             </div>
-            <Stack direction="row" spacing={2}>
-              <Button variant="contained" endIcon={<DraftsRoundedIcon />}>
+            <Stack direction="row" spacing={2} sx={{ marginTop: "3rem" }}>
+              <Button
+                variant="contained"
+                endIcon={<DraftsRoundedIcon />}
+                sx={{
+                  backgroundColor: "#C7C7C7",
+                  color: "#000",
+                  boxShadow: "6px 4px 8px 2px #fff",
+                  border: "1px solid black",
+                  width: "7rem",
+                }}
+              >
                 Send
               </Button>
             </Stack>

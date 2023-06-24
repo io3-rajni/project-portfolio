@@ -114,7 +114,8 @@ export const MiniProject = [
     img: twiter,
     alt: "blank img",
     icon: icon,
-    githubLink: "",
+    githubLink:
+      "https://github.com/io3-rajni/io4-aspiration/tree/29b9c3503ddd56d5ea501df2c304ca68d9fe9d12/assignment/2023-02-01-twiter%20Page-Display%20Flex",
     description: "A comic characters list app that displays Marvel characters.",
   },
   {
@@ -122,7 +123,8 @@ export const MiniProject = [
     img: position,
     alt: "position",
     icon: icon,
-    githubLink: "",
+    githubLink:
+      "https://github.com/io3-rajni/io4-aspiration/tree/29b9c3503ddd56d5ea501df2c304ca68d9fe9d12/assignment/2023-02-05%20position-%20banner",
     description: "A comic characters list app that displays Marvel characters.",
   },
 ];
