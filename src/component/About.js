@@ -7,10 +7,14 @@ import {
   Box,
   Input,
   TextareaAutosize,
+  Button,
+  Stack,
 } from "@mui/material";
 import { useState } from "react";
 import * as React from "react";
-// import Textarea from "@mui/Textarea";
+// import Stack from "@mui/material/Stack";
+import DraftsRoundedIcon from "@mui/icons-material/DraftsRounded";
+import "./TextArea.css";
 const About = () => {
   // const emailRegex = "[a-zA-Z0-9]+.[a-zA-Z0-9]+@gmail.com";
   // const [email, setEmail] = useState();
@@ -29,10 +33,22 @@ const About = () => {
         item
         container
         spacing={1}
-        sx={{ backgroundColor: "black", padding: " 1% 0px 0px 8%" }}
+        sx={{ backgroundColor: "black", height: "153vh" }}
       >
-        <Box sx={{ width: "60%", backgroundColor: "#292929", marginTop: "5%" }}>
-          <Grid item xs={12}>
+        <Box
+          sx={{
+            width: "60%",
+            backgroundColor: "#292929",
+            marginTop: "5%",
+            padding: " 1% 0px 0px 6%",
+            marginLeft: "10%",
+            borderRadius: "35px",
+            boxShadow: "5px 0px 6px 3px white",
+            height: "123vh",
+          }}
+          className="mainContainer"
+        >
+          <Grid item xs={12} sx={{ paddingTop: "4%" }}>
             <Box>
               <Typography
                 variant="h6"
@@ -55,7 +71,7 @@ const About = () => {
               </Typography>
             </Box>
           </Grid>
-          <Box component="form" sx={{}} noValidate autoComplete="on">
+          <Box component="form" noValidate autoComplete="on">
             <div>
               <Typography
                 variant="h5"
@@ -65,11 +81,21 @@ const About = () => {
               </Typography>
 
               <TextField
-                id="outlined-password-input"
+                id="outlined-text-input"
                 label="Your Name"
                 type="text"
                 autoComplete="name"
-                sx={{ width: " 80%", backgroundColor: "black" }}
+                color="info"
+                placeholder="Enter You Name"
+                sx={{
+                  width: " 80%",
+                  backgroundColor: "#C7C7C7",
+                  borderRadius: "10px",
+
+                  marginTop: "5%",
+                  color: "white",
+                  boxShadow: "6px 4px 8px 2px #fff",
+                }}
               />
             </div>
             <div>
@@ -81,29 +107,45 @@ const About = () => {
               </Typography>
 
               <TextField
-                id="outlined-password-input"
+                id="outlined-text-input"
                 label="Email"
                 type="email"
                 autoComplete="on"
-                sx={{ width: " 80%", backgroundColor: "black" }}
+                placeholder="Enter You Email"
+                sx={{
+                  width: " 80%",
+                  backgroundColor: "#C7C7C7",
+                  borderRadius: "10px",
+                  marginTop: "5%",
+                  color: "white",
+                  boxShadow: "6px 4px 8px 2px #fff",
+                }}
               />
             </div>
             <div>
               <Typography
                 variant="h5"
-                sx={{ color: "#D4D4D8", paddingTop: "5%" }}
+                sx={{
+                  color: "#D4D4D8",
+                  paddingTop: "5%",
+                }}
               >
                 Message
               </Typography>
-              <Box sx={{ width: " 80%", backgroundColor: "black" }}>
+              <Box sx={{}}>
                 <TextareaAutosize
                   aria-label="minimum height"
-                  // minRows={30}
-                  // minCol={30}
-                  sx={{ color: "red !important" }}
+                  minRows={10}
+                  placeholder="what is your Massage"
+                  className="textArea"
                 />
               </Box>
             </div>
+            <Stack direction="row" spacing={2}>
+              <Button variant="contained" endIcon={<DraftsRoundedIcon />}>
+                Send
+              </Button>
+            </Stack>
           </Box>
         </Box>
       </Grid>

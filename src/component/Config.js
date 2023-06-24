@@ -12,6 +12,14 @@ import coverhunt from "../assets/icons/frontend.png";
 import microverse from "../assets/icons/github.png";
 import kelhel from "../assets/icons/prototyping.png";
 import dcc from "../assets/icons/menu.png";
+import gmail from "../assets/projects/gmail page.jpg";
+import mail from "../assets/projects/mail page.jpg";
+import first from "../assets/projects/first project.jpg";
+import solarSystem from "../assets/projects/solar system.jpg";
+import teachMint from "../assets/projects/teachmint.jpg";
+import twiter from "../assets/projects/twiter page.jpg";
+import position from "../assets/projects/with position.jpg";
+import youtube from "../assets/projects/you tube page.jpg";
 export const Config = [
   {
     id: 1,
@@ -50,63 +58,71 @@ export const tech = [
 export const MiniProject = [
   {
     id: 10000,
-    img: "",
-    alt: "blank img",
+    img: youtube,
+    alt: "youtube",
     icon: icon,
+    githubLink:
+      "https://github.com/io3-rajni/io3-aspiration/tree/3ce0bf03b3535df21cd58f790f8c8e4bae0504b8/monthly-test/2022-08-5%20montly%20-test",
     description: "A comic characters list app that displays Marvel characters.",
   },
   {
     id: 20000,
-    img: "",
-    alt: "blank img",
+    img: first,
+    alt: "first",
     icon: icon,
+    githubLink: "",
     description: "A comic characters list app that displays Marvel characters.",
   },
   {
     id: 30000,
-    img: "",
+    img: gmail,
     icon: icon,
-
-    alt: "blank img",
+    githubLink:
+      "https://github.com/io3-rajni/io3-aspiration/tree/3ce0bf03b3535df21cd58f790f8c8e4bae0504b8/monthly-test/2022-08-11%20monthly-test",
+    alt: "gmail",
     description: "A comic characters list app that displays Marvel characters.",
   },
   {
     id: 10000,
-    img: "",
-    alt: "blank img",
+    img: mail,
+    alt: "mail",
     icon: icon,
-
+    githubLink:
+      "https://github.com/io3-rajni/io3-aspiration/tree/3ce0bf03b3535df21cd58f790f8c8e4bae0504b8/monthly-test/2022-08-11%20monthly-test",
     description: "A comic characters list app that displays Marvel characters.",
   },
   {
     id: 20000,
-    img: "",
+    img: solarSystem,
     icon: icon,
-
-    alt: "blank img",
+    githubLink:
+      "https://github.com/io3-rajni/io3-aspiration/tree/3ce0bf03b3535df21cd58f790f8c8e4bae0504b8/assignment/2022-08-2%20assignment%20solar%20syastem%20with%20animation",
+    alt: "solarSystem",
     description: "A comic characters list app that displays Marvel characters.",
   },
   {
     id: 30000,
-    img: "",
-    alt: "blank img",
+    img: teachMint,
+    alt: "teachMint",
     icon: icon,
-
+    githubLink:
+      "https://github.com/io3-rajni/io3-aspiration/tree/3ce0bf03b3535df21cd58f790f8c8e4bae0504b8/pratice",
     description: "A comic characters list app that displays Marvel characters.",
   },
   {
     id: 20000,
-    img: "",
+    img: twiter,
     alt: "blank img",
     icon: icon,
-
+    githubLink: "",
     description: "A comic characters list app that displays Marvel characters.",
   },
   {
     id: 30000,
-    img: "",
-    alt: "blank img",
+    img: position,
+    alt: "position",
     icon: icon,
+    githubLink: "",
     description: "A comic characters list app that displays Marvel characters.",
   },
 ];

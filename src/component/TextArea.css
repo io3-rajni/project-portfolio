@@ -1,0 +1,25 @@
+.mainContainer {
+  padding-left: 5%;
+  position: relative;
+  /* animation-duration: 1.64s, 15.22s; */
+  /* animation-delay: 2s; */
+  animation-name: mymove 2s ease-in-out infinite;
+}
+@keyframes mymove {
+  0% {
+    transform: translateX(50%);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  100% {
+  }
+}
+
+.textArea {
+  width: 80%;
+  background-color: #c7c7c7;
+  margin-top: 5%;
+  border-radius: 10px;
+  box-shadow: 6px 4px 8px 2px #fff;
+}

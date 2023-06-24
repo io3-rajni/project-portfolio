@@ -90,7 +90,8 @@ export default function Project() {
                       image={item?.img}
                       alt="image"
                       sx={{
-                        backgroundColor: "blue",
+                        // backgroundColor: "blue",
+                        objectFit: "fill",
                         width: "17rem",
                         height: "15rem",
                       }}
@@ -112,7 +113,7 @@ export default function Project() {
                           borderRadius: "25px",
                         }}
                       >
-                        <a href="https://github.com/io3-rajni">
+                        <a href={item?.githubLink}>
                           <img
                             src={item.icon}
                             backgroundColor="black"
