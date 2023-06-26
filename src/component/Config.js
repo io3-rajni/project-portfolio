@@ -14,7 +14,7 @@ import kelhel from "../assets/icons/prototyping.png";
 import dcc from "../assets/icons/menu.png";
 import gmail from "../assets/projects/gmail page.jpg";
 import mail from "../assets/projects/mail page.jpg";
-import first from "../assets/projects/first project.jpg";
+import countingApp from "../assets/projects/first project.jpg";
 import solarSystem from "../assets/projects/solar system.jpg";
 import teachMint from "../assets/projects/teachmint.jpg";
 import twiter from "../assets/projects/twiter page.jpg";
@@ -63,15 +63,16 @@ export const MiniProject = [
     icon: icon,
     githubLink:
       "https://github.com/io3-rajni/io3-aspiration/tree/3ce0bf03b3535df21cd58f790f8c8e4bae0504b8/monthly-test/2022-08-5%20montly%20-test",
-    description: "A comic characters list app that displays Marvel characters.",
+    description: "Create a You Tube clone page by using HTML5 CSS3.",
   },
   {
     id: 20000,
-    img: first,
-    alt: "first",
+    img: countingApp,
+    alt: "countingApp",
     icon: icon,
     githubLink: "",
-    description: "A comic characters list app that displays Marvel characters.",
+    description:
+      "Create a Counting app by using React JS , Bootstrap Framework.",
   },
   {
     id: 30000,
@@ -80,7 +81,7 @@ export const MiniProject = [
     githubLink:
       "https://github.com/io3-rajni/io3-aspiration/tree/3ce0bf03b3535df21cd58f790f8c8e4bae0504b8/monthly-test/2022-08-11%20monthly-test",
     alt: "gmail",
-    description: "A comic characters list app that displays Marvel characters.",
+    description: "Create a G-Mail sign in page by using HTML5 CSS3",
   },
   {
     id: 10000,
@@ -89,7 +90,7 @@ export const MiniProject = [
     icon: icon,
     githubLink:
       "https://github.com/io3-rajni/io3-aspiration/tree/3ce0bf03b3535df21cd58f790f8c8e4bae0504b8/monthly-test/2022-08-11%20monthly-test",
-    description: "A comic characters list app that displays Marvel characters.",
+    description: "Create a G-Mail page by using HTML5 CSS3 ",
   },
   {
     id: 20000,
@@ -98,7 +99,7 @@ export const MiniProject = [
     githubLink:
       "https://github.com/io3-rajni/io3-aspiration/tree/3ce0bf03b3535df21cd58f790f8c8e4bae0504b8/assignment/2022-08-2%20assignment%20solar%20syastem%20with%20animation",
     alt: "solarSystem",
-    description: "A comic characters list app that displays Marvel characters.",
+    description: "Moving Solar system by using HTML5 and CSS3. ",
   },
   {
     id: 30000,
@@ -107,7 +108,7 @@ export const MiniProject = [
     icon: icon,
     githubLink:
       "https://github.com/io3-rajni/io3-aspiration/tree/3ce0bf03b3535df21cd58f790f8c8e4bae0504b8/pratice",
-    description: "A comic characters list app that displays Marvel characters.",
+    description: "Teachmint clone page using HTML5 and CSS3.",
   },
   {
     id: 20000,
@@ -116,7 +117,7 @@ export const MiniProject = [
     icon: icon,
     githubLink:
       "https://github.com/io3-rajni/io4-aspiration/tree/29b9c3503ddd56d5ea501df2c304ca68d9fe9d12/assignment/2023-02-01-twiter%20Page-Display%20Flex",
-    description: "A comic characters list app that displays Marvel characters.",
+    description: "Ratatouille Twitter Page using HTML5 and CSS3 .",
   },
   {
     id: 30000,
@@ -125,7 +126,7 @@ export const MiniProject = [
     icon: icon,
     githubLink:
       "https://github.com/io3-rajni/io4-aspiration/tree/29b9c3503ddd56d5ea501df2c304ca68d9fe9d12/assignment/2023-02-05%20position-%20banner",
-    description: "A comic characters list app that displays Marvel characters.",
+    description: "Cover  .",
   },
 ];
 export const experienceData = [
