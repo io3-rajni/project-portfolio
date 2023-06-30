@@ -81,6 +81,7 @@ export default function Project() {
                     boxShadow: " 1px 5px 88px 9px",
                     borderRadius: "25px",
                     marginTop: "5%",
+                    height: "22rem",
                   }}
                 >
                   <CardActionArea>
@@ -111,6 +112,7 @@ export default function Project() {
                           height: "3rem",
                           background: "black",
                           borderRadius: "25px",
+                          fontFamily: "san-sarif",
                         }}
                       >
                         <a href={item?.githubLink}>

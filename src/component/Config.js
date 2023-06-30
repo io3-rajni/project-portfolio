@@ -12,7 +12,7 @@ import coverhunt from "../assets/icons/frontend.png";
 import microverse from "../assets/icons/github.png";
 import kelhel from "../assets/icons/prototyping.png";
 import dcc from "../assets/icons/menu.png";
-import gmail from "../assets/projects/gmail page.jpg";
+import reactSign from "../assets/projects/react sigin page.jpg";
 import mail from "../assets/projects/mail page.jpg";
 import countingApp from "../assets/projects/first project.jpg";
 import solarSystem from "../assets/projects/solar system.jpg";
@@ -70,18 +70,18 @@ export const MiniProject = [
     img: countingApp,
     alt: "countingApp",
     icon: icon,
-    githubLink: "",
+    githubLink: "https://github.com/io3-rajni/reactWithBootstrap",
     description:
       "Create a Counting app by using React JS , Bootstrap Framework.",
   },
   {
     id: 30000,
-    img: gmail,
+    img: reactSign,
     icon: icon,
     githubLink:
-      "https://github.com/io3-rajni/io3-aspiration/tree/3ce0bf03b3535df21cd58f790f8c8e4bae0504b8/monthly-test/2022-08-11%20monthly-test",
+      "https://github.com/io3-rajni/siginPage/tree/73bb34f125473c09eea91a7bee2d999c952a8ae7/pages",
     alt: "gmail",
-    description: "Create a G-Mail sign in page by using HTML5 CSS3",
+    description: "Create Login Page in React JS ",
   },
   {
     id: 10000,
@@ -126,7 +126,7 @@ export const MiniProject = [
     icon: icon,
     githubLink:
       "https://github.com/io3-rajni/io4-aspiration/tree/29b9c3503ddd56d5ea501df2c304ca68d9fe9d12/assignment/2023-02-05%20position-%20banner",
-    description: "Cover  .",
+    description: "Cover Page by using HTML5 and CSS3 .",
   },
 ];
 export const experienceData = [

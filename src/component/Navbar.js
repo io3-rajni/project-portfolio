@@ -2,7 +2,7 @@ import * as React from "react";
 // import "./Portfolio.css";
 import AdbIcon from "@mui/icons-material/Adb";
 import MenuIcon from "@mui/icons-material/Menu";
-import worldMap from "../assets/backgrounds/world-map.png";
+// import worldMap from "../assets/backgrounds/world-map.png";
 import {
   CardMedia,
   Grid,
@@ -24,7 +24,7 @@ import {
 import { CardActionArea } from "@mui/material";
 
 const Portfolio = () => {
-  const pages = ["Products", "Pricing", "Blog"];
+  const pages = ["Home", "Project", "Contact"];
   const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -81,7 +81,7 @@ const Portfolio = () => {
                 color: "black",
               }}
             >
-              LOGO
+              PORTFOLIO
             </Typography>
 
             <Box

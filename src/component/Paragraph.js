@@ -1,6 +1,8 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { TextVariant } from "./TextVariant";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
 import { Grid, Box, Typography, container } from "@mui/material";
 export default function Paragraph() {
   return (
@@ -38,17 +40,23 @@ export default function Paragraph() {
                 variant="body"
                 sx={{ color: "#b5b0b0", fontSize: "19px" }}
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Debitis sapiente ipsum dolorum dicta eaque cumque inventore
-                molestias, beatae ea quaerat alias accusamus voluptas autem!
-                Alias odit voluptates in totam vitae dignissimos minus eaque
-                culpa unde tempore dolore aperiam obcaecati voluptatum aliquam
-                corrupti, suscipit accusamus! Odit unde veniam dolorum ipsum
-                doloribus.
+                I am a Frontend Developer in ReactJS. I have
               </Typography>
             </Box>
           </Box>
         </Grid>
+        {/* <ImagfdeList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+          {itemData.map((item) => (
+            <ImageListItem key={item.img}>
+              <img
+                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                alt={item.title}
+                loading="lazy"
+              />
+            </ImageListItem>
+          ))}
+        </ImageList> */}
       </Grid>
     </>
   );

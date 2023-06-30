@@ -50,17 +50,16 @@ export default function SelfIntro() {
                     fontWeight: "900",
                   }}
                 >
-                  DEVELOPER
+                  RAJNI MAURYA
                 </Typography>
               </Typography>
 
               <Typography
                 variant="h5"
-                sx={{ width: "60%", fontWeight: "bold" }}
+                sx={{ width: "80%", fontWeight: "bold" }}
                 column={{ xs: 1, sm: 2, md: 3 }}
               >
-                Lorem ipsum dolor sit amet. consectetur adipisicing elit
-                deleniti, voluptas.
+                Frontend Developer in React Js.
               </Typography>
             </Box>
           </Grid>
