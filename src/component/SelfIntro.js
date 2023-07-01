@@ -1,6 +1,7 @@
 import * as React from "react";
 import { styled, Grid, Paper, Box, Typography } from "@mui/material";
 import "./intro.css";
+import { imagePaste } from "./Config";
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
@@ -64,6 +65,15 @@ export default function SelfIntro() {
           </Grid>
         </Grid>
       </Box>
+      {imagePaste?.map((item, i) => {
+        return (
+          <>
+            <Typography>
+              <img src={item?.selfImage} />
+            </Typography>
+          </>
+        );
+      })}
     </Box>
   );
 }

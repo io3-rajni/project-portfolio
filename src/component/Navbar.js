@@ -218,32 +218,8 @@ const Portfolio = () => {
             species, ranging across all continents except Antarctica
           </Typography>
           {/* </CardContent> */}
-          <Grid item xs={6}>
-            {/* <Card
-          sx={{
-            width: "100%",
-            height: "100vh",
-            backgroundImage: "world-map",
-            display: "flex",
-          }}
-        > */}
-            {/* <CardActionArea
-            sx={{
-              width: "100%",
-              height: "100vh",
-              backgroundImage: "world-map",
-              display: "flex",
-            }}
-          > */}
-
-            {/* <Box> */}
-            {/* <CardMedia /> */}
-            {/* </Box> */}
-            {/* </CardActionArea> */}
-            {/* </Card> */}
-          </Grid>
+          <Grid item xs={6}></Grid>
         </Box>
-        {/* Third Content */}
 
         <Grid item xs={6}></Grid>
       </Grid>

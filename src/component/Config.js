@@ -20,6 +20,7 @@ import teachMint from "../assets/projects/teachmint.jpg";
 import twiter from "../assets/projects/twiter page.jpg";
 import position from "../assets/projects/with position.jpg";
 import youtube from "../assets/projects/you tube page.jpg";
+import selfImage from "../assets/self/rajni.jpg";
 export const Config = [
   {
     id: 1,
@@ -157,5 +158,12 @@ export const experienceData = [
     icon: dcc,
     iconBg: "#333333",
     date: "Sep 2022 - Present",
+  },
+];
+export const imagePaste = [
+  {
+    id: "000",
+    img: selfImage,
+    alt: "image",
   },
 ];
