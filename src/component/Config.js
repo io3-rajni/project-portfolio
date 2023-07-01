@@ -20,7 +20,7 @@ import teachMint from "../assets/projects/teachmint.jpg";
 import twiter from "../assets/projects/twiter page.jpg";
 import position from "../assets/projects/with position.jpg";
 import youtube from "../assets/projects/you tube page.jpg";
-import selfImage from "../assets/self/rajni.jpg";
+import selfImage from "../assets/self/rajni-removebg-preview.png";
 export const Config = [
   {
     id: 1,

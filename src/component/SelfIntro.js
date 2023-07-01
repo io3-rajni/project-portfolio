@@ -63,17 +63,17 @@ export default function SelfIntro() {
               </Typography>
             </Box>
           </Grid>
+          {imagePaste?.map((item, i) => {
+            return (
+              <>
+                <Typography>
+                  <img src={item?.img} />
+                </Typography>
+              </>
+            );
+          })}
         </Grid>
       </Box>
-      {imagePaste?.map((item, i) => {
-        return (
-          <>
-            <Typography>
-              <img src={item?.selfImage} />
-            </Typography>
-          </>
-        );
-      })}
     </Box>
   );
 }
