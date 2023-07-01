@@ -1,7 +1,6 @@
 import * as React from "react";
 import { styled, Grid, Paper, Box, Typography } from "@mui/material";
 import "./intro.css";
-import { color } from "framer-motion";
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,

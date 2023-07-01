@@ -12,21 +12,10 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import * as React from "react";
-// import Stack from "@mui/material/Stack";
+
 import DraftsRoundedIcon from "@mui/icons-material/DraftsRounded";
 import "./TextArea.css";
 const About = () => {
-  // const emailRegex = "[a-zA-Z0-9]+.[a-zA-Z0-9]+@gmail.com";
-  // const [email, setEmail] = useState();
-  // const [showError, setShowError] = useState("");
-  // const handleEmail = (event) => {
-  //   if (event?.target?.value.match(emailRegex)) {
-  //     setEmail(event?.target?.value);
-  //   } else {
-  //     setShowError("Enter Valid Email");
-  //   }
-  // };
-  // console.log("ShowError", showError);
   return (
     <>
       <Grid
@@ -44,7 +33,7 @@ const About = () => {
             marginLeft: "10%",
             borderRadius: "35px",
             boxShadow: "5px 0px 6px 3px white",
-            height: "123vh",
+            height: "130vh",
           }}
           className="mainContainer"
         >

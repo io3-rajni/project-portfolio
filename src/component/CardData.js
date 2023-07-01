@@ -14,7 +14,7 @@ export default function CardData() {
         sx={{
           display: "flex",
           width: "100%",
-          // marginLeft: "4.9rem",
+
           justifyContent: "space-evenly",
           paddingTop: "4rem",
           paddingBottom: "4rem",
@@ -36,7 +36,6 @@ export default function CardData() {
               <CardActionArea>
                 <CardMedia
                   component="img"
-                  // height="140"
                   image={item?.img}
                   alt="image"
                   sx={{
